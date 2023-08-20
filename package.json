@@ -1,0 +1,19 @@
+{
+	"name": "acad-framework",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@adrencad/sdk": "^1.2.0",
+		"axios": "^1.4.0",
+		"chalk": "^4.1.2",
+		"moment": "^2.29.4",
+		"socket.io-client": "^4.7.2"
+	}
+}
