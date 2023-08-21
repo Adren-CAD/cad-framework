@@ -12,23 +12,6 @@ balance = 0
 inGarage = false
 smoking = false
 
-function SendReactMessage(action, data)
-	SendNUIMessage({
-		action = action,
-		data = data
-	})
-end
-
-function setMapShown(bool)
-	mapShown = bool
-
-	if bool then
-		SendReactMessage('setPage', 'map')
-	else 
-		SendReactMessage('setPage', nil)
-	end
-end
-
 SendReactMessage('setResourceName', GetCurrentResourceName())
 
 RegisterNetEvent('adrenCAD:setConfig')

@@ -10,6 +10,27 @@ function authencatedMethod(callback)
 	end
 end
 
+function setPage(page)
+	SendReactMessage('setPage', page)
+end
+
+function SendReactMessage(action, data)
+	SendNUIMessage({
+		action = action,
+		data = data
+	})
+end
+
+function setMapShown(bool)
+	mapShown = bool
+
+	if bool then
+		SendReactMessage('setPage', 'map')
+	else 
+		SendReactMessage('setPage', nil)
+	end
+end
+
 function notify(text)
     SetNotificationTextEntry("STRING")
     AddTextComponentString(text)
