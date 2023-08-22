@@ -1,0 +1,34 @@
+[
+	{
+		"label": "Framework Version 1.0.3",
+		"version": "1.0.3",
+		"date": "2023-08-22T20:29:55.530Z",
+		"release": "https://github.com/Adren-CAD/cad-framework/releases/tag/v1.0.3",
+		"additions": [],
+		"changes": ["fxmanifest fixes"]
+	},
+	{
+		"label": "Framework Version 1.0.2",
+		"version": "1.0.2",
+		"date": "2023-08-21T20:31:41.522Z",
+		"release": "https://github.com/Adren-CAD/cad-framework/releases/tag/v1.0.2",
+		"additions": [],
+		"changes": ["Fire/EMS MDT fixes"]
+	},
+	{
+		"label": "Framework Version 1.0.1",
+		"version": "1.0.1",
+		"date": "2023-07-21T17:40:27.924Z",
+		"release": "https://github.com/Adren-CAD/cad-framework/releases/tag/v1.0.1",
+		"additions": [],
+		"changes": ["Discord & Steam login fixes"]
+	},
+	{
+		"label": "Framework Release",
+		"version": "1.0.0",
+		"date": "2023-07-21T17:40:27.924Z",
+		"release": "https://github.com/Adren-CAD/cad-framework/releases/tag/v1.0.0",
+		"additions": ["Initial Release"],
+		"changes": []
+	}
+]
