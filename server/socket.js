@@ -1,5 +1,3 @@
-// const SDK = require('@adrencad/sdk');
-
 const io = require('socket.io-client');
 
 let Config = null;
@@ -11,8 +9,6 @@ function setConfig(config) {
 	emit('adrenCAD:configSet');
 
 	SetConvar('cad_communityId', `${config.communityId}`);
-
-	// SetConvar('cad_economy_enabled', JSON.stringify(config.economyEnabled));
 
 	Config = config;
 
@@ -37,14 +33,6 @@ const init = async () => {
 	try {
 		Logger.log('Verifying with AdrenCAD.');
 
-		// const API = new SDK({
-		// 	framework: true,
-		// 	version: Version,
-		// 	dev: true,
-		// });
-
-		// const connection = await API.createConnection(APIKey);
-
 		const connection = io('https://plugins-api.adrencad.com', {
 			extraHeaders: {
 				APIKey: GetConvar('ADRENCAD_KEY'),
@@ -54,7 +42,6 @@ const init = async () => {
 		connection.emit('setup', {
 			framework: true,
 			version: GetConvar('cad_framework_version'),
-			// dev: true,
 		});
 
 		_connection = connection;
