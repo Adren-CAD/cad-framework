@@ -14,6 +14,8 @@ ui_page 'web/build/index.html'
 shared_script 'config.lua'
 server_script 'convars.lua'
 
+client_script 'client/utils.lua'
+
 client_script 'libs/sitdown/list.lua'
 client_script 'libs/sitdown/client.lua'
 
@@ -27,7 +29,6 @@ server_script 'server/mdt.lua'
 server_script 'server/plugins.js'
 
 client_script 'client/client.lua'
-client_script 'client/utils.lua'
 
 client_script 'client/**/*'
 
