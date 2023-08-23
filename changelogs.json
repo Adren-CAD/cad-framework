@@ -1,5 +1,13 @@
 [
 	{
+		"label": "Framework Version 1.0.4",
+		"version": "1.0.4",
+		"date": "2023-08-23T01:26:18.630Z",
+		"release": "https://github.com/Adren-CAD/cad-framework/releases/tag/v1.0.4",
+		"additions": [],
+		"changes": ["Various MDT fixes"]
+	},
+	{
 		"label": "Framework Version 1.0.3",
 		"version": "1.0.3",
 		"date": "2023-08-22T20:29:55.530Z",
