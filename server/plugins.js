@@ -22,6 +22,8 @@ on('adrenCAD:registerPlugin', async (plugin, data) => {
 		newPlugin = data.new;
 	}
 
+	const pluginName = plugin.charAt(0).toUpperCase() + plugin.slice(1);
+
 	plugins.push(plugin);
 
 	if (newPlugin) {
@@ -30,9 +32,9 @@ on('adrenCAD:registerPlugin', async (plugin, data) => {
 		);
 
 		Logger.log(
-			`The ${plugin} plugin has been registered. You can now edit the plugin on your community settings dashboard.`
+			`The ${pluginName} plugin has been registered. You can now edit the plugin on your community settings dashboard.`
 		);
 	} else {
-		Logger.log(`${plugin} script started.`);
+		Logger.log(`${pluginName} script started.`);
 	}
 });
