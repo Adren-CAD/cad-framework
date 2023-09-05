@@ -21,7 +21,7 @@ server_script 'server/logger.js'
 server_script 'API/index.js'
 server_script 'API/routes/**/**.js'
 
--- server_script 'server/integrations.js'
+server_script 'server/integrations.js'
 -- server_script 'integrations/**/**.js'
 
 client_script 'libs/sitdown/list.lua'

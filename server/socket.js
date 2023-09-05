@@ -30,7 +30,7 @@ const init = async () => {
 			{
 				framework: true,
 				version: GetConvar('cad_framework_version'),
-				// integrations: integrations,
+				integrations: integrations,
 			}
 		);
 
