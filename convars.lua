@@ -1,4 +1,4 @@
-SetConvar('cad_framework_version', '1.0.0')
+SetConvar('cad_framework_version', '1.1.0')
 
 SetConvar('cad_events_prefix', 'adrenCAD')
 
