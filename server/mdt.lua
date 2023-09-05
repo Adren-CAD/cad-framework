@@ -16,16 +16,12 @@ AddEventHandler('MDT:beginPatrol', function(data)
     PerformHttpRequest(API_URL .. '/internal/user', function(statusCode, responseBody, responseHeaders)
         local user = json.decode(responseBody)
 
-        if user.error then
-            print('Unexpected error while trying too begin user MDT patrol.')
-        else
-            table.insert(activePlayers, {
-                userId = user._id,
-                displayName = user.displayName,
-                callsign = callsign,
-                player = player
-            })
-        end
+        table.insert(activePlayers, {
+            userId = user._id,
+            displayName = user.displayName,
+            callsign = callsign,
+            player = player
+        })
     end, 'GET', nil, headers)
 end)
 

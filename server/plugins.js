@@ -1,7 +1,5 @@
 let plugins = [];
 
-const axios = require('axios');
-
 on('adrenCAD:registerPlugin', async (plugin, data) => {
 	let newPlugin = false;
 
@@ -9,20 +7,22 @@ on('adrenCAD:registerPlugin', async (plugin, data) => {
 
 	if (_newPlugin) newPlugin = true;
 	else if (verify) {
-		const API = GetConvar('cad_API');
+		const _API = GetConvar('cad_API');
 
 		const API_Key = GetConvar('ADRENCAD_KEY');
 
 		const { data } = await axios.post(
-			`${API}/plugins/fetch`,
+			`${_API}/plugins/fetch`,
 			{ plugin: plugin },
-			{ headers: { Authorization: `Bearer ${API_Key}` } }
+			{
+				headers: {
+					Authorization: `Bearer ${'kTLRTsl0EBqWB37UP63/YAc3x.tuWd+8XyeUgGj-Yq'}`,
+				},
+			}
 		);
 
 		newPlugin = data.new;
 	}
-
-	const pluginName = plugin.charAt(0).toUpperCase() + plugin.slice(1);
 
 	plugins.push(plugin);
 
@@ -32,9 +32,9 @@ on('adrenCAD:registerPlugin', async (plugin, data) => {
 		);
 
 		Logger.log(
-			`The ${pluginName} plugin has been registered. You can now edit the plugin on your community settings dashboard.`
+			`The ${plugin} plugin has been registered. You can now edit the plugin on your community settings dashboard.`
 		);
 	} else {
-		Logger.log(`${pluginName} script started.`);
+		Logger.log(`${plugin} script started.`);
 	}
 });

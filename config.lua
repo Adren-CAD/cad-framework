@@ -3,6 +3,8 @@ Config = {
 
     MDT_keybind = 305, 
 
+    list_server = true, -- Enable your server being listed on servers.adrencad.com
+
     police_stations = {
         {
             label = 'Sandy Shores Sheriff\'s Office',

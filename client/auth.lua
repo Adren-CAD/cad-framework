@@ -22,7 +22,9 @@ RegisterNetEvent('adrenCAD:setDashboardToken')
 AddEventHandler('adrenCAD:setDashboardToken', function(token)
 	userToken = token
 
-    user = { token = token }
+    user = { 
+        token = token
+    }
 
 	SendReactMessage('setDashboardToken', token)
 

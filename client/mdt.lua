@@ -25,6 +25,8 @@ end)
 
 RegisterNUICallback('setMDTConnected', function(data)
 	MDTConnected = data.connected
+
+	TriggerEvent('adrenCAD:mdtConnected', data.connected)
 end)
 
 RegisterNUICallback('changeCallsign', function(data)

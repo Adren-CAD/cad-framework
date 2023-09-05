@@ -1,6 +1,3 @@
-const chalk = require('chalk');
-const moment = require('moment');
-
 class Logger {
 	static log(content, error) {
 		const time = `[${moment().format('HH:mm:ss')}]`;
